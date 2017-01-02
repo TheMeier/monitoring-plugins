@@ -196,7 +196,7 @@ sub format_result() {
     
     foreach $R (@characters) {
 	my $rdata = sprintf("$format_unit{$R}",($data{$R}*$adjust_unit{$R}));
-	push(@perfdata2,"$R=$rdata$units{$R}");
+	push(@perfdata2,"$R=$rdata");
 	}
     
     my $mdata = sprintf("$format_unit{$mon}",($data{$mon}*$adjust_unit{$mon}));
